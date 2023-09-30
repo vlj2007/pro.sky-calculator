@@ -11,7 +11,6 @@ public class WelcomeCalculatorService implements CalculatorInterface {
         int num2 = Integer.parseInt(String.valueOf(values[1]));
         int Result = num1 + num2;
         return "<center><b>" + num1 + " + " + num2 + " =  " + Result + "</center></b>";
-
     }
 
     public String minusWelcome(int... values) {
@@ -22,8 +21,13 @@ public class WelcomeCalculatorService implements CalculatorInterface {
     }
 
     @Override
-    public String answerWelcome(String userName) {
-        return "<center><b> Добро пожаловать в калькулятор " + userName + "</b></center>";
+    public String answerWelcome() {
+        return "<center><b> Добро пожаловать в калькулятор </b></center>";
+    }
+
+    @Override
+    public String welcome() {
+        return "<center><b> Добро пожаловать на сайт. </b></center>";
     }
 
     public String multiplyWelcome(int... values) {
@@ -39,7 +43,5 @@ public class WelcomeCalculatorService implements CalculatorInterface {
         } else {
             return "<center><b>" + num1 + " / " + num2 + " = " + String.valueOf((float) (num1 / num2)) + "</center></b>";
         }
-
     }
 }
-

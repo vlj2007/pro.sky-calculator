@@ -1,7 +1,9 @@
 package pro.sky.pro.skycalculator.service.api;
 
 public interface CalculatorInterface {
-    String answerWelcome(String userName);
+    String answerWelcome();
+
+    String welcome();
 
     String multiplyWelcome(int... values);
 

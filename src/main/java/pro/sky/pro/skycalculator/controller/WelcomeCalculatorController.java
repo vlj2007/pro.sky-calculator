@@ -20,12 +20,13 @@ public class WelcomeCalculatorController {
 
     @GetMapping
     public String welcome() {
-        return "<center><b> Добро пожаловать в калькулятор </b></center>";
+        return welcomeCalculatorService.welcome();
     }
 
+
     @GetMapping(path = "/calculator")
-    public String answerWelcome(@RequestParam("name") String userName) {
-        return welcomeCalculatorService.answerWelcome(userName);
+    public String answerWelcome() {
+        return welcomeCalculatorService.answerWelcome();
     }
 
     @GetMapping(path = "/calculator/plus")
