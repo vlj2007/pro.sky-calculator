@@ -1,8 +1,9 @@
-package pro.sky.pro.skycalculator;
+package pro.sky.pro.skycalculator.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import pro.sky.pro.skycalculator.service.api.CalculatorInterface;
 
 @RestController
 public class WelcomeCalculatorController {

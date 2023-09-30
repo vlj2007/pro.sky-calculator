@@ -1,4 +1,4 @@
-package pro.sky.pro.skycalculator;
+package pro.sky.pro.skycalculator.service.api;
 
 public interface CalculatorInterface {
     String answerWelcome(String userName);

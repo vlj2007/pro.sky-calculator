@@ -1,9 +1,10 @@
-package pro.sky.pro.skycalculator;
+package pro.sky.pro.skycalculator.service.impl;
 
 import org.springframework.stereotype.Service;
+import pro.sky.pro.skycalculator.service.api.CalculatorInterface;
 
 @Service
-public class WelcomeCalculatorService implements CalculatorInterface{
+public class WelcomeCalculatorService implements CalculatorInterface {
 
     public String plusWelcome(int... values) {
         int num1 = Integer.parseInt(String.valueOf(values[0]));
